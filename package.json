@@ -1,0 +1,43 @@
+{
+  "name": "VotingApp",
+  "version": "1.0.0",
+  "description": "A voting app in MERN stack",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "start": "npm-run-all --parallel watch:server watch:build",
+    "watch:build": "webpack --watch",
+    "watch:server": "nodemon --inspect=\"9229\" \"./build/bundle.js\" --watch \"./build\" "
+  },
+  "author": "Dipmalya Sen",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.12.4",
+    "nodemon": "^1.12.1",
+    "npm-run-all": "^4.1.1",
+    "regenerator-runtime": "^0.12.1",
+    "webpack": "^3.8.1"
+  },
+  "dependencies": {
+    "babel-eslint": "^10.0.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "eslint": "^5.14.0",
+    "eslint-loader": "^2.1.2",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.4.0",
+    "moment": "^2.24.0",
+    "mongodb": "^3.1.13",
+    "mongoose": "^5.4.13",
+    "morgan": "^1.9.1",
+    "uniqid": "^5.0.3",
+    "uuid": "^3.3.2"
+  }
+}
