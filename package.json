@@ -9,7 +9,7 @@
     "watch:build": "webpack --watch",
     "watch:server": "nodemon --inspect=\"9229\" \"./build/bundle.js\" --watch \"./build\" "
   },
-  "author": "Dipmalya Sen",
+  "author": "Nandkumar Gangai",
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.26.0",
